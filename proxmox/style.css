@@ -19,11 +19,14 @@ nav {
 
 #search-box {
   margin: 1em;
+  max-width: 300px;
 }
 
 #search-box input {
   padding: 0.5em;
   width: 100%;
+  border: 1px solid #555;
+  border-radius: 4px;
 }
 
 main {
@@ -37,10 +40,16 @@ main {
   border-radius: 8px;
 }
 
-.script-card pre {
-  background-color: #333333;
-  padding: 1em;
-  border-radius: 4px;
+.script-card h3 {
+  cursor: pointer;
+}
+
+.script-card > *:not(h3) {
+  display: none;
+}
+
+.script-card.active > *:not(h3) {
+  display: block;
 }
 
 footer {

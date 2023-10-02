@@ -1,22 +1,35 @@
 document.addEventListener('DOMContentLoaded', function() {
-  const scriptCard = document.querySelector('.script-card');
-  scriptCard.addEventListener('click', function() {
-    const content = scriptCard.querySelector('pre');
-    if (content.style.display === 'none' || content.style.display === '') {
-      content.style.display = 'block';
-    } else {
-      content.style.display = 'none';
-    }
+  const scriptCards = document.querySelectorAll('.script-card');
+  scriptCards.forEach(function(scriptCard) {
+    const h3 = scriptCard.querySelector('h3');
+    h3.addEventListener('click', function() {
+      scriptCard.classList.toggle('active');
+    });
   });
 
   const searchBox = document.querySelector('#search-box input');
   searchBox.addEventListener('keyup', function() {
     const filter = searchBox.value.toUpperCase();
-    const h3 = scriptCard.querySelector('h3');
-    if (h3.textContent.toUpperCase().indexOf(filter) > -1) {
-      scriptCard.style.display = '';
-    } else {
-      scriptCard.style.display = 'none';
-    }
+    scriptCards.forEach(function(scriptCard) {
+      const h3 = scriptCard.querySelector('h3');
+      if (h3.textContent.toUpperCase().indexOf(filter) > -1) {
+        scriptCard.style.display = '';
+      } else {
+        scriptCard.style.display = 'none';
+      }
+    });
   });
 });
+
+function copyToClipboard(elementId) {
+  const str = document.getElementById(elementId).innerText;
+  const el = document.createElement('textarea');
+  el.value = str;
+  el.setAttribute('readonly', '');
+  el.style.position = 'absolute';
+  el.style.left = '-9999px';
+  document.body.appendChild(el);
+  el.select();
+  document.execCommand('copy');
+  document.body.removeChild(el);
+}

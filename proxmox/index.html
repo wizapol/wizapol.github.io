@@ -4,49 +4,7 @@
   <meta charset="UTF-8">
   <title>Proxmox VE Helper Scripts</title>
   <style>
-    body {
-      font-family: Arial, Helvetica, sans-serif;
-      color: #FFFFFF;
-      background-color: #2E2E2E;
-      margin: 0;
-      padding: 0;
-    }
-    header {
-      background-color: #333333;
-      padding: 20px;
-      text-align: center;
-    }
-    nav {
-      background-color: #333333;
-      padding: 10px;
-      text-align: center;
-    }
-    nav a {
-      margin: 10px;
-      color: #FFFFFF;
-      text-decoration: none;
-    }
-    #search-box {
-      margin: 20px;
-      text-align: center;
-    }
-    #search-box input {
-      padding: 10px;
-    }
-    main {
-      padding: 20px;
-    }
-    .script-card {
-      border: 1px solid #444444;
-      background-color: #333333;
-      padding: 15px;
-      margin: 15px;
-    }
-    footer {
-      background-color: #333333;
-      padding: 10px;
-      text-align: center;
-    }
+    /* Estilos anteriores */
   </style>
 </head>
 <body>
@@ -56,9 +14,7 @@
   </header>
   
   <nav>
-    <a href="#home-assistant">Home Assistant</a>
-    <a href="#automation">Automation</a>
-    <!-- Agrega más enlaces aquí según sea necesario -->
+    <!-- Enlaces de navegación -->
   </nav>
 
   <div id="search-box">
@@ -68,11 +24,16 @@
   <main>
     <h2>Scripts Disponibles</h2>
     <div class="script-card">
-      <h3>FireFly III</h3>
-      <p>Descripción del script.</p>
+      <h3>Firefly III Proxmox automated scripts by wizapol</h3>
+      <p>Este script genera un contenedor de Alpine 3.18 e instala por docker compose Firefly III.</p>
+      <p><strong>Sistema Operativo:</strong> Alpine 3.18.</p>
+      <p><strong>Configuración de VM:</strong> 1 CPU, 1GB RAM, 1GB Storage.</p>
+      <p>Corre este comando en la consola de Proxmox:</p>
+      <pre><code>bash -c "$(wget -qLO - https://raw.githubusercontent.com/wizapol/Proxmox-scripts/main/fireflyiii/fireflyiii.sh)"</code></pre>
+      <p>Para este aplicativo, ingresar a: "(IP_VM):8200"</p>
+      <p>Atáscate!</p>
       <a href="https://github.com/wizapol/Proxmox-scripts/tree/main/fireflyiii" style="color: #FFFFFF;">Ver más</a>
     </div>
-    <!-- Agrega más tarjetas de script aquí según sea necesario -->
   </main>
 
   <footer>

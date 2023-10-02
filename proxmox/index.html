@@ -1,17 +1,37 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Mi Página de Proxmox Scripts</title>
+  <meta charset="UTF-8">
+  <title>Proxmox VE Helper Scripts</title>
   <style>
     body {
       font-family: Arial, Helvetica, sans-serif;
       color: #FFFFFF;
       background-color: #2E2E2E;
+      margin: 0;
+      padding: 0;
     }
     header {
       background-color: #333333;
       padding: 20px;
       text-align: center;
+    }
+    nav {
+      background-color: #333333;
+      padding: 10px;
+      text-align: center;
+    }
+    nav a {
+      margin: 10px;
+      color: #FFFFFF;
+      text-decoration: none;
+    }
+    #search-box {
+      margin: 20px;
+      text-align: center;
+    }
+    #search-box input {
+      padding: 10px;
     }
     main {
       padding: 20px;
@@ -32,8 +52,18 @@
 <body>
 
   <header>
-    <h1>Scripts para Proxmox</h1>
+    <h1>Proxmox VE Helper Scripts</h1>
   </header>
+  
+  <nav>
+    <a href="#home-assistant">Home Assistant</a>
+    <a href="#automation">Automation</a>
+    <!-- Agrega más enlaces aquí según sea necesario -->
+  </nav>
+
+  <div id="search-box">
+    <input type="text" placeholder="Search">
+  </div>
 
   <main>
     <h2>Scripts Disponibles</h2>
@@ -42,6 +72,7 @@
       <p>Descripción del script.</p>
       <a href="https://github.com/wizapol/Proxmox-scripts/tree/main/fireflyiii" style="color: #FFFFFF;">Ver más</a>
     </div>
+    <!-- Agrega más tarjetas de script aquí según sea necesario -->
   </main>
 
   <footer>

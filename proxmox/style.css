@@ -1,9 +1,14 @@
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Courier New', Courier, monospace; /* Font más "hacker" */
   margin: 0;
   padding: 0;
   background-color: #121212;
   color: #ffffff;
+}
+
+header, main, footer {
+  max-width: 800px;
+  margin: auto; /* Centra el contenido */
 }
 
 header {
@@ -44,11 +49,11 @@ main {
   cursor: pointer;
 }
 
-.script-content {
+.script-card > *:not(h3) {
   display: none;
 }
 
-.script-card.active .script-content {
+.script-card.active > *:not(h3) {
   display: block;
 }
 

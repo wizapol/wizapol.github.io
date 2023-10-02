@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <title>Proxmox Scripts</title>
   <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
 </head>
 <body>
 
@@ -22,24 +23,24 @@
   <main>
     <h2>Scripts Disponibles</h2>
     <div class="script-card">
-      <h3>
-
-___________.__              ___________.__          .___.___.___ 
-\_   _____/|__|______   ____\_   _____/|  | ___.__. |   |   |   |
- |    __)  |  \_  __ \_/ __ \|    __)  |  |<   |  | |   |   |   |
- |     \   |  ||  | \/\  ___/|     \   |  |_\___  | |   |   |   |
- \___  /   |__||__|    \___  >___  /   |____/ ____| |___|___|___|
-     \/                    \/    \/         \/                   
-
-</h3>
-      <h3> Proxmox automated scripts by wizapol</h3>
+      <h3>Proxmox automated scripts by wizapol</h3>
       <p>Este script genera un contenedor de Alpine 3.18 e instala por docker compose Firefly III.</p><br>
       <p><strong>Sistema Operativo:</strong> Alpine 3.18.</p>
       <p><strong>Configuración de VM:</strong> 1 CPU, 1GB RAM, 1GB Storage.</p><br>
       <p>Corre este comando en la consola de Proxmox:</p>
-      <pre><code>bash -c "$(wget -qLO - https://raw.githubusercontent.com/wizapol/Proxmox-scripts/main/fireflyiii/fireflyiii.sh)"</code></pre><br>
+      <pre><code id="command1">bash -c "$(wget -qLO - https://raw.githubusercontent.com/wizapol/Proxmox-scripts/main/fireflyiii/fireflyiii.sh)"</code><button onclick="copyToClipboard('command1')">Copy</button></pre><br>
       <p>Para este aplicativo, ingresar a: "(IP_VM):8200"</p><br>
       <p>Atáscate!</p>
+    </div>
+    <div class="script-card">
+      <h3>Dummy Script for Testing</h3>
+      <p>This is a dummy script for testing purposes.</p><br>
+      <p><strong>Operating System:</strong> Ubuntu 20.04</p>
+      <p><strong>VM Configuration:</strong> 2 CPUs, 2GB RAM, 20GB Storage.</p><br>
+      <p>Run this command in the Proxmox console:</p>
+      <pre><code id="command2">bash -c "$(wget -qLO - https://raw.githubusercontent.com/dummy/dummy-script.sh)"</code><button onclick="copyToClipboard('command2')">Copy</button></pre><br>
+      <p>To access this app, go to: "(IP_VM):8300"</p><br>
+      <p>Enjoy!</p>
     </div>
   </main>
 

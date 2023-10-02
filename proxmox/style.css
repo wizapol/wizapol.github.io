@@ -12,9 +12,9 @@ header, main, footer {
 }
 
 header {
-  background-color: #333333;
   padding: 1em;
   text-align: center;
+  background-color: transparent; /* Quita el fondo */
 }
 
 nav {
@@ -23,8 +23,9 @@ nav {
 }
 
 #search-box {
-  margin: 1em;
+  margin: 1em auto;  /* Centra la barra de búsqueda */
   max-width: 300px;
+  text-align: center; /* Alineación de texto al centro */
 }
 
 #search-box input {
@@ -58,7 +59,7 @@ main {
 }
 
 footer {
-  background-color: #333333;
   padding: 1em;
   text-align: center;
+  background-color: transparent; /* Quita el fondo */
 }

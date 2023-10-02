@@ -44,11 +44,11 @@ main {
   cursor: pointer;
 }
 
-.script-card > *:not(h3) {
+.script-content {
   display: none;
 }
 
-.script-card.active > *:not(h3) {
+.script-card.active .script-content {
   display: block;
 }
 

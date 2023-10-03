@@ -17,10 +17,6 @@ header {
   background-color: transparent; /* Quita el fondo */
 }
 
-nav {
-  background-color: #444444;
-  padding: 1em;
-}
 
 #search-box {
   margin: 1em auto;  /* Centra la barra de búsqueda */

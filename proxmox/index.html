@@ -47,17 +47,16 @@
       <p>Para este aplicativo, ingresar a: "(IP_VM):8200"</p>
     </div>
     <div class="script-card">
-      <h3>TwinGate</h3>
-      <p>Firefly III es una plataforma de código abierto para la gestión de finanzas personales.</p>
-      <p>Ofrece contabilidad de partida doble, importación de datos, reglas avanzadas para organizar transacciones, y opciones para etiquetar y presupuestar gastos.</p>
-      <p>También cuenta con informes detallados y una API REST JSON para usuarios avanzados. Es una solución completa y fácil de usar para manejar tus finanzas.</p><br>
-      <p><strong>Sistema Operativo:</strong> Alpine 3.18.</p>
-      <p><strong>Configuración de VM:</strong> 1 CPU, 1GB RAM, 1GB Storage.</p>
+      <h3>Ubuntu 23.04</h3>
+      <p>Este script instala Ubuntu 23.04 en un contenedor de Proxmox. Ideal para entornos de desarrollo, pruebas o producción.</p>
+      <p><strong>Sistema Operativo:</strong> Ubuntu 23.04.</p>
+      <p><strong>Configuración de VM:</strong> 1 CPU, 1GB RAM, 4GB Storage.</p>
       <p>Corre este comando en la consola de Proxmox:</p>
-      <button onclick="copyToClipboard('command1')">Copy</button>
-      <pre><code id="command1">bash -c "$(wget -qLO - https://raw.githubusercontent.com/wizapol/Proxmox-scripts/main/fireflyiii/fireflyiii.sh)"</code></pre>
-      <p>Para este aplicativo, ingresar a: "(IP_VM):8200"</p>
-    </div>
+      <button onclick="copyToClipboard('commandUbuntu')">Copy</button>
+      <pre><code id="commandUbuntu">bash -c "$(wget -qLO - https://raw.githubusercontent.com/wizapol/Proxmox-scripts/main//ubuntu23/ubuntu23.sh)"</code></pre>
+      <p>Para acceder a este contenedor, usar SSH o la consola de Proxmox y conectar a la IP asignada.</p>
+  </div>
+
     <!-- Agrega más script-cards aquí -->
   </main>
 

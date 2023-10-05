@@ -34,17 +34,17 @@
       <p>Para este aplicativo, ingresar a: "(IP_VM):8200"</p>
     </div>
     <div class="script-card">
-      <h3>pfSense</h3>
-      <p>Firefly III es una plataforma de código abierto para la gestión de finanzas personales.</p>
-      <p>Ofrece contabilidad de partida doble, importación de datos, reglas avanzadas para organizar transacciones, y opciones para etiquetar y presupuestar gastos.</p>
-      <p>También cuenta con informes detallados y una API REST JSON para usuarios avanzados.</p>
-      <p> Es una solución completa y fácil de usar para manejar tus finanzas.</p><br>
+      <h3>Nginx Proxy Manager</h3>
+      <p>Nginx Proxy Manager es una GUI intuitiva construida sobre Nginx para facilitar la administración de proxy inverso.</p>
+      <p>Permite manejar fácilmente múltiples sitios web, redireccionamientos HTTP y certificados SSL con Let's Encrypt.</p>
+      <p>Es especialmente útil para personas que necesitan manejar múltiples servicios web y desean asegurarlos a través de un certificado SSL sin tener que lidiar con las configuraciones complicadas de Nginx.</p>
+      <p>Es una herramienta completa y fácil de usar para la administración de tu servidor proxy.</p><br>
       <p><strong>Sistema Operativo:</strong> Ubuntu 23.04.</p>
-      <p><strong>Configuración de VM:</strong> 1 CPU, 1GB RAM, 4GB Storage.</p>
+      <p><strong>Configuración de VM:</strong> 1 CPU, 512MB RAM, 3GB Storage.</p>
       <p>Corre este comando en la consola de Proxmox:</p>
-      <button onclick="copyToClipboard('command1')">Copy</button>
-      <pre><code id="command1">bash -c "$(wget -qLO - https://raw.githubusercontent.com/wizapol/Proxmox-scripts/main/fireflyiii/fireflyiii.sh)"</code></pre>
-      <p>Para este aplicativo, ingresar a: "(IP_VM):8200"</p>
+      <button onclick="copyToClipboard('commandNPM')">Copy</button>
+      <pre><code id="commandNPM">bash -c "$(wget -qLO - https://raw.githubusercontent.com/wizapol/Proxmox-scripts/main/nginx-proxy-manager/nginx-proxy-manager.sh)"</code></pre>
+      <p>Para acceder a este aplicativo, ingresar a: "(IP_VM):81"</p>
     </div>
     <div class="script-card">
       <h3>Ubuntu 23.04</h3>
